@@ -1,0 +1,17 @@
+@media screen and (min-width: 40rem) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 10px;
+    }
+    
+    .parent section {
+        box-shadow: 1px 1px 10px black;
+    }
+}
