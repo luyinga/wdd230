@@ -26,7 +26,7 @@ nav {
 nav ul {
     list-style-type: none;
 }
-nav a {
+.navigation a {
     display: block;
     color: #fff;
     text-align: center;
@@ -38,6 +38,26 @@ nav a:hover {
 }
 nav .active {
 background-color: rgba(0,0,0,0.3);
+}
+.open a {
+	display: block;
+}
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
 }
 .parent section {
     border: 1px solid rgb(24, 38, 24);
