@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <title>Luyinga Lumbale - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:url" content="https://www.churchofjesuschrist.org/study/scriptures?lang=eng&platform=web">
+    <meta property="og:type" content="website" >
+    <meta property="og:title" content="Luyinga Lumbae - WDD230 - Web Frontend Development">
+</head>
+<body>
+    <header>
+        <div id="logo_link" >
+            <img class="logo" src="images/logo3.PNG" alt="my Logo" >
+        </div>
+        <div>
+            <h1>Cape Town</h1>
+            <h4>Chamber of Commerce</h4>
+         </div> 
+         <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="fb icon">
+        </a>
+        <button id="menu"></button>
+         <nav class="navigation">
+             <a href="#">Home</a>
+             <a href="#">Discover</a>
+             <a href="#">Directory</a>
+             <a href="#">Join</a>
+         </nav>
+    </header>         
+    <main>
+        <div id="hero">
+            <div id="hero-box">
+               <img id="hero-img" src="images/hero-image.PNG" alt="Hero image ">
+            </div>
+            <div class="button-box">
+                <a class="join" href="#">Join The Chamber</a>
+            </div>
+        </div>
+        <div class="home-grid">
+            <section class="one">
+                <h3>Events</h3>
+                  <p>
+                    Cape Town Festival - Marimba
+                    Join us for this Cape Town Festival on saturday at 2:00 pm            
+                 </p>
+            </section>
+            <section class="two">
+                <h3>Weather</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                   Ipsa molestiae sapiente, inventore laborum dolores cum praesenti
+                </p>
+            </section>
+        </div>
+        <div class="home-grid2">    
+              <div class="first">
+                <h3> Die Burger</h3>
+                  <p>Welcom to die burge</p>
+                    <p>morning@dieburger.com</p>
+                    <p>website</p>
+
+              </div >
+              <div class="second">
+                <h3> The Citizen</h3>
+                  <p>Welcom to the citizen</p>
+                    <p>opera@thecitizen.com</p>
+                    <p>website</p>
+              </div>
+              <div class="third">
+                <h3> Neethling</h3>
+                  <p>Welcom to Neethling</p>
+                    <p>aluta@neethling.com</p>
+                    <p>website</p>
+              </div>
+        </div>    
+    </main>
+    <footer>
+        <div class="count1">
+            <img class="logo" src="images/logo3.png" alt="logo image" >
+        </div> 
+        <div>   
+            <h4>Cape Town Chamber of commerce</h4>
+            <p>72 Queen victoria street, Cape Town South Africa 888</p>
+        </div>
+        <div class="count2">
+            <p>info@capetownsa.com </p>
+            <p>+(27)743819889</p>
+            <p>Location Map</p>   
+        </div>
+        <div class="count3">
+            &copy; <span id="currentyear"></span> |  Luyinga Lumbale - South Africa | 
+
+           <div class="lastmodification">
+             <p>Last modification: <span id="lastmodification"></span> </p>
+           </div>
+        </div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script> 
+
+</body>
+</html>

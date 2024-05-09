@@ -1,0 +1,84 @@
+@media screen and (min-width: 40rem) {
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    header .navigation {
+        background-color:rgba(98, 101, 96, 0.7);
+        color: #fff;
+        text-align: center;
+    }
+    header div, a, nav {
+        background-color:rgba(98, 101, 96, 0.7);
+    }
+    nav a {
+        background-color:rgba(98, 101, 96, 0.7);
+        color: #fff;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+    header a {
+        padding-top: 30px;
+    }
+    a:hover {
+        background-color: blue;
+    }
+    #hero-img {
+        width: 100%;
+    }
+    body {
+        background-color: #fcfbfb;
+        font-family: Raleway, Arial, sans-serif;
+        font-size: 22px;
+        margin: 0;
+        padding: 0;
+    }
+    .logo {
+        width: 80px;
+    }
+   footer {
+    background-color: rgba(98, 101, 96, 0.7);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px;
+    text-align: center;
+  }
+  .home-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;   
+  }
+  .home-grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .count3 {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    color: rgb(235, 235, 59);
+  }
+  .home-grid2 {
+    margin: 40px;
+    background-color: rgb(194, 198, 201);
+    padding: 30px;
+    border-radius: 10px;
+  } 
+  .home-grid {
+    margin: 40px;
+    background-color: rgb(194, 198, 201);
+    padding: 30px;
+    border-radius: 10px;
+
+  } 
+  .count1 {
+    text-align: center;
+  } 
+  .join {
+    color: beige;
+  }
+}
+
