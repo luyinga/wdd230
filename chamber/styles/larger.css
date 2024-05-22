@@ -30,6 +30,8 @@
     }
     #hero-img {
         width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     body {
         background-color: #fcfbfb;
@@ -105,5 +107,8 @@
   .card1 h2, h3 {
     padding: 20px;
   }
+  #hero span {
+    font-size: 2rem;
+}
 }
 
