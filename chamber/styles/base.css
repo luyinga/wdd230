@@ -105,6 +105,9 @@ color: rgb(24, 27, 29);
 .card1 h2, h3 {
     padding: 20px;
 }
+#hero {
+    position: relative;
+}
 #hero span {
     position: absolute;
     bottom: 40%;
