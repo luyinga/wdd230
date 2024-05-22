@@ -1,5 +1,5 @@
 @media screen and (min-width: 40rem) {
-    .navigation {
+    .navigation a {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -19,9 +19,9 @@
         padding-top: 30px;
     }
     .navigation a {
-		display: block;
-		flex: 1 1 100%;
-	}
+		    display: block;
+		    flex: 1 1 100%;
+    }    
     header a {
         padding-top: 30px;
     }
@@ -79,6 +79,31 @@
   } 
   .join {
     color: beige;
+  }
+  .wrapper {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .card2 {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px black;
+  }
+  /* hover effect */
+  .card2 picture img:hover {
+    box-shadow: 0 0 50px #333;
+  }
+  .card2 picture img {
+    width: 100%;
+  }
+  .card1 {
+    padding: 30px;
+    box-shadow: 1px 1px 10px black;
+  }
+  .card1 h2, h3 {
+    padding: 20px;
   }
 }
 
