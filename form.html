@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
     <link rel="icon" href="favicon.ico">
     <meta property="og:url" content="https://www.churchofjesuschrist.org/study/scriptures?lang=eng&platform=web">
     <meta property="og:type" content="website" >
@@ -30,42 +31,57 @@
     <button id="menu"></button>
     <nav>
         <ul class="navigation" > 
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="chamber/index.html">Chamber</a></li> 
             <li><a href="week01/chamber-site-plan.html">Site Plane</a></li> 
-            <li><a href="form.html">Form</a></li>  
+            <li class="active"><a href="form.html">Form</a></li>  
         </ul> 
     </nav>
     <main>
-        <div class="hero">
-            <picture>
-                <source srcset="images/Kinshasa-Temple-small.webp" media="(max-width :400px)">
-                <source srcset="images/Kinshasa-Temple-large.webp" media="(max-width :960px)">
-                <img src="images/Kinshasa-Temple-large.webp" alt="picture of Temple">
-            </picture>
-            <span>Kinshasa Temple</span>
-        </div>
-        <h1>WDD 230: Web Frontend Development</h1>
-
-        <div class="parent">
-          <section class="card">
-            <h2>Learning Activities</h2>
-            <ul>
-                <li>01:<a href="week01/holygrail.html">Layout</a>|<a href="week01/media-query.html">Media Query</a>|<a href="week01/code-pen.html">JS Pen</a></li>
-                <li>02:<a href="week02/hamburger.html">Hamburger-Menu</a>|<a href="week02/bom.html">DOM Manipulation</a>|<a href="chamber/index.html">Chamber</a></li>
-                <li>03:<a href="week03/images/landscape.webp">WebP</a>|<a href="week03/lazyload.html">Lazy Loading</a>|<a href="week03/responsive-images.html">Responsive Images</a></li>
-                <li>04:<a href="week04/pseudo-class.html">Css Pseudo-class</a>|<a href="week04/images/Combinators-shoot-screen.PNG">Css Combinators</a>|<a href="week04/tablebuild.html">Html Table</a></li>
-                <li>05:<a></a></li>
-                <li>06:<a></a></li>
-            </ul>
-          </section>
-          <section class="card">
-              <h2>Information</h2>
-              <div>
-                <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
-              </div>
-          </section>
-        </div>
+       <h2>Form</h2>
+       <form action="record.html" method="get">
+          <div>
+            <label for="username" class="up">Username: </label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <div>
+            <label for="password" class="up">Password: </label>
+            <input type="password" id="password" name="username" required pattern="[A_Za-z0-9]{8,}" 
+            title="Password must be at least 8 characters and must only be alpha numeric">
+          </div>
+          <div>
+            <label for="confirm-password" class="up">Confirm-password: </label>
+            <input type="confirm-password" id="confirm-password" name="confirm-password" required 
+            pattern="[A_Za-z0-9]{8,}">
+          </div>
+          <div>
+            <label for="email" class="up">Email: </label>
+            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+            title="Please enter a valid email address" placeholder="@byui.edu">
+          </div>
+          <div>
+            <label for="r" class="up">Page rating: </label>
+            <div id="rangevalue">0</div>
+            <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+            <datalist id="rangevalues">
+	           <option value="0">0</option>
+	           <option value="1">1</option>
+	           <option value="2">2</option>
+	           <option value="3">3</option>
+	           <option value="4">4</option>
+	           <option value="5">5</option>
+             <option value="6">6</option>
+	           <option value="7">7</option>
+	           <option value="8">8</option>
+	           <option value="9">9</option>
+	           <option value="10">10</option>
+            </datalist>
+          </div>    
+          <div>
+             <input type="submit" id="submit" name="submit">
+          </div>   
+       </form>
+       <div id="feedback"></div> 
     </main>
     <div class="map-container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.358849088674!2d18.595646475488234!3d-33.9061627209946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5a614bc03baf%3A0x8b106fdf9ddc0626!2sParow%20Centre!5e0!3m2!1sen!2sza!4v1716139311970!5m2!1sen!2sza" 
@@ -81,6 +97,7 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/numVisits.js"></script>  
+    <script src="scripts/numVisits.js"></script>
+    <script src="scripts/formValidation.js"></script>  
 </body>
 </html>

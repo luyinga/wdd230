@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luyinga Leonard">
+    <meta name="description" content="HTML Table Activity">
+    <title>HTML Table Excercise</title>
+    <link rel="stylesheet" href="styles/tablebuild.css">
+</head>
+<body>
+<h2>Html Table</h2>
+<main class="wrapper">
+   <table>
+     <caption>Table 1: Account Feature Comparison</caption>
+       <tr>
+        <th colspan="4">ACME Wildwest Services</th>
+       </tr>
+       <tr>
+        <th></th>
+        <th>Basic</th>
+        <th>Premium</th>
+        <th>Deluxe</th>
+       </tr>
+       <tr>
+        <td>Feature 1</td>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td>✔️</td>
+       </tr>
+       <tr>
+        <td>Feature 2</td>
+        <td>❌</td>
+        <td>✔️</td>
+        <td>✔️</td>
+       </tr>
+      <tr>
+        <td>Feature 3</td>
+        <td>❌</td>
+        <td>❌</td>
+        <td>✔️</td>
+      </tr>  
+   </table>
+</main>
+<footer>
+    <p>&copy; <span id="currentyear"></span><br>  Luyinga Lumbale - South Africa</p>
+
+    <div class="lastmodification">
+        <p>Last modification: <span id="lastmodification"></span> </p>
+    </div> 
+</footer>
+<script src="scripts/getDates.js"></script>
+</body>
+</html>

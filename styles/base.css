@@ -124,3 +124,6 @@ footer {
     height: 100%; /* iframe takes full height of .map-container */
     border: none;
 }
+.parent ul li {
+    font-size: 30px;
+}
