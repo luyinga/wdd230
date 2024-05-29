@@ -52,8 +52,7 @@ label {
 	font-size: 16px;
 }
 
-input:focus,
-textarea:focus {
+input:focus {
 	outline: none;
 }
 
@@ -61,22 +60,10 @@ input::placeholder {
 	font-size: 13px;
 }
 
-#formmessage {
-	visibility: none;
-	margin: 10px;
-	padding: 0.5rem;
-	color: red;
-}
-
 #keyphrase:invalid {
 	background-color: #fff0f3;
 	animation: shaketext 500ms;
 }
-
-/* input[required] ^ label::after {
-	font-size: 10px;
-	content: " *️⃣";
-} */
 
 .req::after {
 	font-size: 10px;
