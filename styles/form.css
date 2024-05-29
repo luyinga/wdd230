@@ -3,16 +3,21 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+:root {
+	--yellow: #c0d533;
+    --white: #fff;
+	--black:  #161515;;
+}
 
 body {
 	font-family: Roboto, helvetica, sans-serif;
-	background-color: #ddd;
+	background-color: var(--white);
 }
 
 main {
 	margin: 20px auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
-	background-color: #fff;
+	background-color: var(--yellow);
 	max-width: 500px;
 }
 
