@@ -115,34 +115,64 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #fff;
     max-width: 500px;
-}
+  }
 
-form {
+  form {
     margin: 20px;
     display: flex;
     flex-direction: column;
     position: relative;
-}
-input {
+    font-weight: bold;
+  }
+  input {
     padding: 10px;
     margin-bottom: 20px;
     border: 0;
     border: 1px solid navy;
     font-size: 1.1rem;
-}
+  }
 
-button {
+  button {
     padding: 10px;
     font-size: 1.2rem;
     font-weight: 700;
-}
+  }
 
-label {
+  label {
     color: navy;
     font-size: 16px;
- }
- input::placeholder {
+  }
+  input::placeholder {
 	font-size: 13px;
-}
+  }
+  .main-area2 form input, textarea {
+    border: 1px solid rgb(128, 0, 9);
+  }
+  .main-area2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgb(0, 200, 255);
+  }
+  .main-area2 .fun1, .main-area2 .fun2 {
+    box-shadow: 1px 1px 10px black;
+    padding: 40px;
+    margin: 20px;
+
+  }
+  .fun2 .bul li {
+    list-style: none;
+  }
+  .fun1, .fun2 {
+    background-color: #fff;
+    border-radius: 2%;
+  }
+  textarea:focus {
+    outline: none;
+  }
+  .main-area2 form #submit {
+    background-color: yellow;
+  }
+
+
 }
 

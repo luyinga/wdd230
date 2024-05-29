@@ -29,11 +29,12 @@
              <a href="index.html">Home</a>
              <a href="discover.html">Discover</a>
              <a href="#">Directory</a>
-             <a href="#">Join</a>
+             <a href="join.html">Join</a>
          </nav>
     </header>         
-    <main class="main-area">
-        <h2>Form</h2>
+    <main class="main-area2">
+      <div class="fun1">
+        <h2>Join</h2>
         <form action="thankyou.html" method="get">
             <div>
               <label for="firstname" class="up">Firstname: </label>
@@ -41,67 +42,91 @@
             </div>
             <div>
               <label for="lastname" class="up">Lastname: </label>
-              <input type="lastname" id="lastname" name="Lastname" required pattern="[A_Za-z0-9]{8,}" 
-              title="Password must be at least 8 characters and must only be alpha numeric">
+              <input type="text" id="lastname" name="Lastname" required>
             </div>
             <div>
-              <label for="position" class="up">Position: </label>
-              <input type="position" id="position" name="position" required 
-              pattern="[A_Za-z0-9]{8,}">
+              <label for="title" class="up">Title: </label>
+              <input type="text" id="title" name="title" required 
+              pattern="[A_Za-z\s\-]{7,}" title="Please enter a valid title or position with a minimum of
+               seven characters (only alphabets, hyphens, and spaces are allowed)">
             </div>
             <div>
               <label for="email" class="up">Email: </label>
-              <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
-              title="Please enter a valid email address" placeholder="luyinga@byui.edu">
+              <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@gmail\.com$"
+              title="Please enter a valid email address" placeholder="luyinga@gmail.com">
             </div>
             <div>
-                <label for="phone-number" class="up">Phone-Number: </label>
-                <input type="phone-number" id="phone-number" name="phone-number" required 
-                pattern="[A_Za-z0-9]{8,}">
+                <label for="phone" class="up">Phone-Number: </label>
+                <input type="tel" id="phone" name="phone" required 
+                placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
               </div>
               <div>
-                <label for="business-name" class="up">Business-Name: </label>
-                <input type="business-name" id="business-name" name="business-name" required 
-                pattern="[A_Za-z0-9]{8,}">
+                <label for="business" class="up">Business's-Name: </label>
+                <input type="text" id="business" name="business" required >
               </div>
               <div>
-                <label for="membership-level" class="up">Membership-Level: </label>
-                <input type="membership-level" id="position" name="membership-level" required 
-                pattern="[A_Za-z0-9]{8,}">
+                <label for="membership" class="up">Membership-Level: </label>
+                <select id="membership">
+                  <option value="">Please select Membership &#9662;</option>
+                  <option value="NP Membership">NP Membership is for non profit organizations and there is no fee.</option>
+                  <option value="Bronze Membership">Bronze Membership</option>
+                  <option value="Silver Membership">Silver Membership</option>
+                  <option value="Gold Membership">Gold Membership</option>
+                </select>
               </div>
               <div>
                 <label for="description" class="up">Description: </label>
-                <input type="description" id="description" name="description" required 
-                pattern="[A_Za-z0-9]{8,}">
+                <textarea id="description" rows="5" cols="25"></textarea>
               </div>
               <div>
                 <label for="timestamp" class="up">Timestamp: </label>
-                <input type="timestamp" id="timestamp" name="timestamp" required 
-                pattern="[A_Za-z0-9]{8,}">
+                <input type="text" id="timestamp" name="timestamp" required>
               </div>
-            <div>
-              <label for="r" class="up">Page rating: </label>
-              <div id="rangevalue">0</div>
-              <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
-              <datalist id="rangevalues">
-                 <option value="0">0</option>
-                 <option value="1">1</option>
-                 <option value="2">2</option>
-                 <option value="3">3</option>
-                 <option value="4">4</option>
-                 <option value="5">5</option>
-                 <option value="6">6</option>
-                 <option value="7">7</option>
-                 <option value="8">8</option>
-                 <option value="9">9</option>
-                 <option value="10">10</option>
-              </datalist>
-            </div>    
             <div>
                <input type="submit" id="submit" name="submit">
             </div>   
-         </form>
-         <div id="feedback"></div>  
+        </form>
+         <div id="feedback"></div> 
+      </div>
+      <div class="fun2">
+                
+          <h1>Membership Level Benefits </h1>
+
+          <h3>Non-Profit (NP) Membership</h3><br>
+          <ul class="bul">
+            <li>There is no fee for non-profit organizations.</li>
+            <li>Belonging to the Chamber offers your business access to an established network where business can meet.</li>
+            <li>The Chamber is a platform for being heard, finding and maximizing opportunities..</li>
+            <li>Opportunities for collaboration and partnerships with other non-profit and business members.</li>
+          </ul>
+      
+          <h3>Bronze Membership</h3><br>
+          <ul class="bul">
+            <li>Affordable membership fee.</li>
+            <li>All the benefits of NP Membership, plus:</li>
+            <li>Exclusive invitations to Chamber-sponsored events, including business luncheons, workshops, and seminars.</li>
+            <li>Helping you grow your business in a structured manner.</li>
+            <li>Assisting you to develop and manage your business processes.</li>
+          </ul>
+          
+          <h3>Silver Membership</h3><br>
+          <ul class="bul">
+            <li>Membership fee at a higher investment level.</li>
+            <li> All the benefits of Bronze Membership, including:</li>
+            <li>Helping you to strengthen the competitiveness of your subsector and value chains.</li>
+            <li>Enhanced exposure with featured spotlights on the Chamber's home page and social media platforms.</li>
+            <li>Display of your organization's marketing materials at Chamber events and the Chamber office.</li>
+          </ul>
+          
+          <h3>Gold Membership</h3><br>
+          <ul  class="bul">
+            <li>Membership fee offering :</li>
+            <li>All the benefits of Silver Membership, including:</li>
+            <li>We also offer access to partners to unlock opportunities, through Chapter coffee clubs/networking</li>
+            <li>Premier positioning with top-tier logo placement on the Chamber's website and promotional materials.</li>
+            <li>We also offer access to partners to unlock opportunities, through Tenders</li>
+          </ul>
+      </div>
     </main>
     <footer>
         <div class="count1">
