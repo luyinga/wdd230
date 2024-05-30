@@ -1,0 +1,23 @@
+{
+    "familyName" : "Luyinga",
+    "date" : "10-06-2024",
+    "numberPeople" : 2,
+    "visited" : true,
+    "members": [
+        {
+           "name":"Grevis",
+           "gender":"Male",
+           "birthdate":"04-10-1992" 
+        },
+        {
+           "name":"Isaac",
+           "gender":"Male",
+           "birthdate":"05-01-2010"
+        },
+        {
+           "name":"Janeli",
+           "gender":"Female",
+           "birthdate":"06-03-2020"
+        }
+    ]
+}
