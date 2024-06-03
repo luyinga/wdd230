@@ -23,7 +23,7 @@ async function getLinks() {
         let ulE = document.querySelector('ul');
 
         //build the a content to show the weeks links
-        anchor.innerText = `${title} | ${title}`;
+        anchor.innerText = `${title}`;
         anchor.href = `${url}`;
         h2.textContent = 'Learning Activity';
 
