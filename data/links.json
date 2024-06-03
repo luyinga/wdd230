@@ -1,0 +1,69 @@
+{
+    "weeks": [
+      {
+        "week": "Week 1",
+      "links": [
+        {
+          "url":"week01/holygrail.html",
+          "title":"HG Layout"
+        },
+        {
+          "url":"week01/media-query.html",
+          "title":"mQueries"
+        }
+      ]
+      },
+      {
+        "week": "Week 2",
+      "links": [
+        {
+          "url":"week02/hamburger.html",
+          "title":"Hamburger"
+        },
+        {
+          "url":"week02/bom.html",
+          "title":"B-Mormon"
+        }
+      ]
+      },
+      {
+        "week": "Week 3",
+      "links": [
+        {
+          "url":"week03/images/landscape.webp",
+          "title":"Landscape"
+        },
+        {
+          "url":"week03/lazyload.html",
+          "title":"Lazyloading"
+        }
+      ]
+      },
+      {
+        "week": "Week 4",
+      "links": [
+        {
+          "url":"week04/pseudo-class.html",
+          "title":"Pseudo-Class"
+        },
+        {
+          "url":"week04/images/Combinators-shoot-screen.PNG",
+          "title":"Combinators"
+        }
+      ]
+      },
+      {
+        "week": "Week 5",
+      "links": [
+        {
+          "url":"week05/pseudo-element.html",
+          "title":"Pseudo-Element"
+        },
+        {
+          "url":"week05/new-ward-members.json",
+          "title":"Nw-Member"
+        }
+      ]
+      }
+    ]
+}    
