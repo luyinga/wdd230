@@ -31,12 +31,7 @@ async function getLinks() {
         section.appendChild('ulE');
         list.appendChild(anchor);
         ulE.appendChild(li);
-
-        document.body.section
-
-
         
-
     });
   }
 

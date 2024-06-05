@@ -133,7 +133,19 @@ textarea:focus {
 }
 .main-area2 form #submit {
     background-color: yellow;
-}    
+}
+.good {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+} 
+.grid {
+    display: flex;
+    flex-direction: column;
+} 
+.grid img {
+    width: 100%;
+}  
 
 
 
